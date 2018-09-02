@@ -48,20 +48,31 @@
         android:textSize="20sp"
         android:drawableRight="@drawable/ic_action_year"/>
 
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="195dp"
+        android:background="@drawable/round_button"
+        android:text="  Division"
+        android:textSize="20sp"
+        android:drawableRight="@drawable/ic_action_year"
+        />
+
     <FrameLayout
         android:layout_width="300dp"
         android:layout_height="70dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="101dp">
+        android:layout_marginBottom="48dp">
 
         <ImageButton
             android:id="@+id/google_logo"
             android:layout_width="63dp"
             android:layout_height="match_parent"
             android:background="@drawable/signin_round_button"
-            app:srcCompat="@drawable/ic_action_google"
-            />
+            app:srcCompat="@drawable/ic_action_google" />
 
 
         <Button
