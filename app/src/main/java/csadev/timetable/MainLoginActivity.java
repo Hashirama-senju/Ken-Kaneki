@@ -11,23 +11,18 @@ import android.widget.Toast;
 
 public class MainLoginActivity extends AppCompatActivity {
     ImageView teacher,student;
-    MediaPlayer mediaPlayer;
-    Animation animation;
-        @Override
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        animation=AnimationUtils.loadAnimation(MainLoginActivity.this,R.anim.zoomout);
 
         setContentView(R.layout.activity_main_login);
-    teacher=(ImageView)findViewById(R.id.teacher);
-    student=(ImageView)findViewById(R.id.student);
-    mediaPlayer=MediaPlayer.create(this,R.raw.cold);
+    teacher=findViewById(R.id.teacher);
+    student=findViewById(R.id.student);
         teacher.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainLoginActivity.this,"teachers",Toast.LENGTH_SHORT);
-            mediaPlayer.start();
-            teacher.startAnimation(animation);
+                Toast.makeText(MainLoginActivity.this,"teachers",Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -35,8 +30,7 @@ public class MainLoginActivity extends AppCompatActivity {
         student.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainLoginActivity.this,"students",Toast.LENGTH_LONG);
-                mediaPlayer.pause();
+                Toast.makeText(MainLoginActivity.this,"students",Toast.LENGTH_LONG).show();
 
             }
         });

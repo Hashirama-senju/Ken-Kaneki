@@ -22,38 +22,46 @@
         android:layout_marginTop="60dp"
         android:background="@drawable/tticon" />
 
+    <LinearLayout
+        android:id="@+id/L1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/icon"
+        android:layout_marginTop="40dp"
+        >
     <TextView
         android:id="@+id/name"
         android:layout_width="280dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="242dp"
         android:background="@drawable/round_button"
         android:hint="  Enter Your Name"
         android:textSize="20sp"
         android:drawableRight="@drawable/ic_action_name"
+        android:padding="5dp"
         />
 
     <TextView
         android:id="@+id/year"
         android:layout_width="280dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="242dp"
+        android:layout_below="@id/name"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/round_button"
         android:gravity="fill_horizontal"
         android:hint="  Year"
         android:textSize="20sp"
         android:drawableRight="@drawable/ic_action_year"/>
+    </LinearLayout>
 
     <FrameLayout
         android:layout_width="300dp"
         android:layout_height="70dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="101dp">
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/L1"
+        android:layout_marginTop="90dp">
 
         <ImageButton
             android:id="@+id/google_logo"

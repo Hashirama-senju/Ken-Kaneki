@@ -22,16 +22,21 @@
         android:layout_marginTop="60dp"
         android:background="@drawable/tticon" />
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
     <TextView
         android:id="@+id/name"
         android:layout_width="280dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="242dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/round_button"
         android:hint="  Enter Your Name"
         android:textSize="20sp"
+        android:padding="5dp"
         android:drawableRight="@drawable/ic_action_name"
         />
 
@@ -39,26 +44,28 @@
         android:id="@+id/year"
         android:layout_width="280dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="15dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="242dp"
         android:background="@drawable/round_button"
+        android:drawableRight="@drawable/ic_action_year"
         android:gravity="fill_horizontal"
         android:hint="  Year"
-        android:textSize="20sp"
-        android:drawableRight="@drawable/ic_action_year"/>
+        android:padding="5dp"
+        android:textSize="20sp" />
 
     <TextView
         android:layout_width="280dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@id/year"
+        android:layout_marginTop="15dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="195dp"
         android:background="@drawable/round_button"
-        android:text="  Division"
-        android:textSize="20sp"
         android:drawableRight="@drawable/ic_action_year"
-        />
+        android:padding="5dp"
+        android:text="  Division"
+        android:textSize="20sp" />
+    </LinearLayout>
 
     <FrameLayout
         android:layout_width="300dp"
